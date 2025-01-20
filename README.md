@@ -21,6 +21,23 @@ pip install mcp ntplib pytz
 mcp install timeserver.py -e TIMEZONE=America/New_York
 ```
 
+Locate the claude_desktop_config.json and add (or change as mcp command generates it) to "mcpServers" the "Time Server":
+```json
+{
+  "mcpServers": {
+    "Time Server": {
+      "command": "/path/to/python",
+      "args": [
+        "/path/to/timeserver.py"
+      ],
+      "env": {
+        "TIMEZONE": "America/New_York"
+      }
+    }
+  }
+}
+```
+
 You can set any valid timezone name from the IANA Time Zone Database. Some common examples:
 - 'America/New_York'
 - 'Europe/London'

@@ -1,9 +1,9 @@
 {
   "mcpServers": {
     "Time Server": {
-      "command": "/Volumes/SamPM991/AnaConda/anaconda3/bin/python3.12",
+      "command": "/path/to/python",
       "args": [
-        "/Volumes/hgst4T/ClaudeMCP-FS-Folder/MCPTimeServer/timeserver.py"
+        "/DirectoryPathTo/timeserver.py"
       ],
       "env": {
         "TIMEZONE": "Europe/Bucharest"
